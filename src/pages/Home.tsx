@@ -61,7 +61,7 @@ const Home = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="md:text-6xl leading-tight font-bold mx-0 my-0 px-0 py-0 text-[#000000] text-2xl text-left">
                 Специалист по медицинской реабилитации
               </h1>
               <p className="text-xl text-muted-foreground">
