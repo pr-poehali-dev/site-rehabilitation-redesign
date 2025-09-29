@@ -381,34 +381,101 @@ const Index = () => {
       <section id="contacts" className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Контакты</h2>
-          <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 space-y-3">
-                <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto">
-                  <Icon name="Phone" className="text-primary" size={24} />
+          <div className="max-w-6xl mx-auto space-y-8">
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="text-center hover:shadow-lg transition-shadow">
+                <CardContent className="p-6 space-y-3">
+                  <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto">
+                    <Icon name="Phone" className="text-primary" size={24} />
+                  </div>
+                  <h3 className="font-semibold">Телефон</h3>
+                  <p className="text-muted-foreground">+7 (495) 123-45-67</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center hover:shadow-lg transition-shadow">
+                <CardContent className="p-6 space-y-3">
+                  <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto">
+                    <Icon name="Mail" className="text-primary" size={24} />
+                  </div>
+                  <h3 className="font-semibold">Email</h3>
+                  <p className="text-muted-foreground">info@rassokhin.ru</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center hover:shadow-lg transition-shadow">
+                <CardContent className="p-6 space-y-3">
+                  <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto">
+                    <Icon name="MapPin" className="text-primary" size={24} />
+                  </div>
+                  <h3 className="font-semibold">Адрес</h3>
+                  <p className="text-muted-foreground">Москва, ул. Примерная, д. 1</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="overflow-hidden shadow-xl">
+              <CardContent className="p-0">
+                <div className="relative w-full h-[400px] md:h-[500px]">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A5f7c1c8e3d3e8e5e8e5e8e5e8e5e8e5e&amp;source=constructor"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    className="w-full h-full"
+                    title="Карта расположения клиники"
+                  />
+                  <div className="absolute bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-80 bg-white p-4 rounded-lg shadow-lg">
+                    <div className="flex items-start space-x-3">
+                      <div className="bg-primary/10 p-2 rounded-lg">
+                        <Icon name="Navigation" className="text-primary" size={20} />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-1">Как добраться</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Москва, ул. Примерная, д. 1<br />
+                          Метро: Маяковская (5 мин пешком)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="font-semibold">Телефон</h3>
-                <p className="text-muted-foreground">+7 (495) 123-45-67</p>
               </CardContent>
             </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 space-y-3">
-                <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto">
-                  <Icon name="Mail" className="text-primary" size={24} />
-                </div>
-                <h3 className="font-semibold">Email</h3>
-                <p className="text-muted-foreground">info@rassokhin.ru</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 space-y-3">
-                <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto">
-                  <Icon name="MapPin" className="text-primary" size={24} />
-                </div>
-                <h3 className="font-semibold">Адрес</h3>
-                <p className="text-muted-foreground">Москва, ул. Примерная, д. 1</p>
-              </CardContent>
-            </Card>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card>
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Clock" className="text-primary" size={24} />
+                    <h3 className="font-semibold text-lg">Режим работы</h3>
+                  </div>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Понедельник - Пятница:</span>
+                      <span className="font-medium">9:00 - 20:00</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Суббота:</span>
+                      <span className="font-medium">10:00 - 18:00</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Воскресенье:</span>
+                      <span className="font-medium">Выходной</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Car" className="text-primary" size={24} />
+                    <h3 className="font-semibold text-lg">Парковка</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Бесплатная парковка для пациентов на территории клиники. Въезд с улицы Примерной.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
