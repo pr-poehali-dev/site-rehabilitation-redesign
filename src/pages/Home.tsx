@@ -61,10 +61,10 @@ const Home = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
-              <h1 className="md:text-6xl leading-tight font-bold mx-0 my-0 px-0 py-0 text-[#000000] text-2xl text-left">
+              <h1 className="md:text-6xl leading-tight font-bold py-0 text-[#000000] text-2xl px-0 mx-0 text-center my-0">
                 Специалист по медицинской реабилитации
               </h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-muted-foreground text-lg text-left py-0 mx-0 my-[1px]">
                 Рассохин Максим Юрьевич - эксперт в области физической и реабилитационной медицины с индивидуальным подходом к каждому пациенту
               </p>
               <div className="flex flex-wrap gap-4">
